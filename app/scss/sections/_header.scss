@@ -1,0 +1,73 @@
+.header {
+	background-image: url("../img/bg/header_bg.png");
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	flex: 1 0 auto;
+	@media(min-width: 1200px) {
+		padding-top: 45px;
+		padding-bottom: 54px;
+	}
+	color: $desc_text;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header .container {
+	display: flex;    
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	    -webkit-justify-content: space-between;
+	            justify-content: space-between;
+	    -webkit-align-items: center;
+	            align-items: center;
+	    position: relative;
+    @media(min-width: 1200px) {
+    	-webkit-flex-direction: row;
+    	    -ms-flex-direction: row;
+    	        flex-direction: row;
+        -webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: baseline;
+	        align-items: baseline;
+    }
+}
+
+.header__logo {
+	margin-bottom: 15px;
+	@media(min-width: 1200px) {
+		-webkit-align-self: flex-start;
+	        align-self: flex-start;
+	    margin-bottom: 0;
+	}
+}
+
+.header__sales {
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 0.42px;
+	margin-bottom: 15px;
+	@media(min-width: 1200px) {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 100%);
+		-webkit-align-self: baseline;
+	        align-self: baseline;
+	    margin-bottom: 0;
+	}
+}
+
+.header__phones {
+	font-size: 31px;
+	font-weight: 800;
+	line-height: 46px;
+	letter-spacing: 0.78px;
+	@media(min-width: 1200px) {
+		-webkit-align-self: baseline;
+	        align-self: baseline;
+	}
+}
+
